@@ -307,7 +307,7 @@ h2 {
   flex: 1;
 }
 
-.nav-links a, .navbar a {
+.nav-links a {
   position: relative;
   color: white;
   text-decoration: none;
@@ -332,8 +332,8 @@ h2 {
 
 .nav-cta {
   background: var(--brand-light);
-  color: var(--dark-bg) !important;
-  font-weight: 700 !important;
+  color: var(--dark-bg);
+  font-weight: 700;
   padding: 9px 22px;
   border-radius: 50px;
   font-size: 0.86rem;
