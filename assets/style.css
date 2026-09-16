@@ -110,42 +110,16 @@ h2 {
 .navbar-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
   flex-shrink: 0;
 }
 
-.navbar-logo-icon {
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
+.navbar-logo-full {
+  height: 46px;
+  width: auto;
   display: block;
+  border-radius: 8px;
 }
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  line-height: 1;
-}
-
-.brand-kicker {
-  font-size: 0.6rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  color: var(--accent);
-}
-
-.brand-name {
-  color: white;
-  font-weight: 800;
-  font-size: 1.05rem;
-  letter-spacing: 0.2px;
-  font-family: "Playfair Display", serif;
-  transition: color 0.3s ease;
-}
-
-.navbar.scrolled .brand-name { color: var(--brand-dark); }
 
 .nav-links {
   list-style: none;
@@ -1108,15 +1082,13 @@ footer {
   margin-right: auto;
 }
 
-.foot-kicker {
-  font-size: 0.62rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  color: var(--brand-light);
+.foot-logo-full {
+  height: 62px;
+  width: auto;
+  display: block;
+  border-radius: 8px;
   margin-bottom: 4px;
 }
-
-.foot-logo { font-family: "Playfair Display", serif; font-weight: 800; font-size: 1.2rem; }
 
 .foot-brand p {
   font-size: 0.84rem;
@@ -1200,6 +1172,7 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .navbar-logo-full { height: 38px; }
   .nav-links { display: none; }
   .nav-cta { display: none; }
   .hamburger { display: flex; }
@@ -1225,6 +1198,7 @@ footer {
 }
 
 @media (max-width: 700px) {
+  .foot-logo-full { height: 44px; }
   .section { padding: 76px 6%; }
   .testimonial-band { padding: 76px 6%; }
   .partners-strip { padding: 34px 6% 44px; }
