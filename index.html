@@ -15,52 +15,19 @@
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<!-- HERO SECTION -->
-<header class="hero" id="home">
-  <div class="hero-bg"></div>
-  <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
-  <div class="hero-vignette"></div>
-
-  <div class="hero-content">
-    <div class="hero-logo-badge">
-      <img src="assets/logo.png" class="hero-logo" alt="Care & Cure Wellness Logo">
-    </div>
-
-    <div class="hero-pill">
-      <span class="pill-dot"></span>
-      India's Trusted OHC & Wellness Partner
-    </div>
-
-    <h1>Empowering Workplace Health & Wellness</h1>
-    <p>Your trusted partner for occupational health, OHC management, diagnostics &amp; emergency care — 10+ years, 100+ corporates served.</p>
-    <p class="hero-tagline">Your Health, Our Priority</p>
-
-    <div class="hero-btns">
-      <a href="#contact" class="btn-gradient">Get in Touch</a>
-      <a href="#services" class="btn-ghost">Explore Services</a>
-    </div>
-
-    <div class="hero-trust">
-      <span class="trust-chip"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Factory Act Compliant</span>
-      <span class="trust-chip"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>OSHA Guidelines</span>
-      <span class="trust-chip"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>100+ Corporates Served</span>
-      <span class="trust-chip"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Sterling Accuris Lab Partner</span>
-    </div>
-  </div>
-
-  <div class="wave" aria-hidden="true"></div>
-</header>
 
 <!-- NAVIGATION -->
 <nav class="navbar">
   <div class="navbar-inner">
     <a href="#home" class="navbar-logo">
-      <span class="brand-kicker">TRT</span>
-      <span class="brand-name">Care &amp; Cure</span>
+      <img src="assets/logo.png" class="navbar-logo-icon" alt="">
+      <span class="brand-text">
+        <span class="brand-kicker">TRT</span>
+        <span class="brand-name">Care &amp; Cure</span>
+      </span>
     </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -90,48 +57,51 @@
   <a href="#contact">Contact</a>
 </div>
 
-<!-- STATS -->
-<section class="stats-band" aria-label="Company statistics">
-  <div class="stats-row">
-    <div class="stat tilt tilt-card">
-      <div class="card-glow"></div>
-      <span class="stat-val"><span data-count="10">0</span>+</span>
-      <p class="stat-lbl">Years of Experience</p>
+<!-- HERO SECTION -->
+<header class="hero" id="home">
+  <div class="hero-photo"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="eyebrow eyebrow-hero">TRT · Trusted · Response · Treatment</p>
+    <h1>Empowering Workplace<br>Health &amp; Wellness</h1>
+    <p class="hero-sub">Your trusted partner for occupational health, OHC management, diagnostics &amp; emergency care — 10+ years, 100+ corporates served.</p>
+
+    <div class="hero-btns">
+      <a href="#contact" class="btn-solid">Get in Touch</a>
+      <a href="#services" class="btn-outline-light">Explore Services →</a>
     </div>
-    <div class="stat tilt tilt-card">
-      <div class="card-glow"></div>
-      <span class="stat-val">24/7</span>
-      <p class="stat-lbl">Doctor Support</p>
-    </div>
-    <div class="stat tilt tilt-card">
-      <div class="card-glow"></div>
-      <span class="stat-val"><span data-count="100">0</span>+</span>
-      <p class="stat-lbl">Corporates Served</p>
-    </div>
-    <div class="stat tilt tilt-card">
-      <div class="card-glow"></div>
-      <span class="stat-val">OHC</span>
-      <p class="stat-lbl">Management Experts</p>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-val"><span data-count="10">0</span>+</span>
+        <span class="hero-stat-lbl">Years Experience</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">24/7</span>
+        <span class="hero-stat-lbl">Doctor Support</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-val"><span data-count="100">0</span>+</span>
+        <span class="hero-stat-lbl">Corporates Served</span>
+      </div>
     </div>
   </div>
-</section>
+</header>
 
 <!-- PARTNERS -->
 <section class="partners-strip fade-up" aria-label="Our partners and affiliations">
   <p class="partners-eyebrow">Trusted Partnerships</p>
   <div class="partners-row">
-    <div class="partner-chip tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="partner-chip">
       <span class="partner-chip-badge">Official Associate Healthcare Partner</span>
       <div class="partner-chip-name">Sanand Industries Association</div>
     </div>
-    <div class="partner-chip tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="partner-chip">
       <span class="partner-chip-badge">Official Lab Partner</span>
       <div class="partner-chip-name">Sterling Accuris Diagnostics</div>
     </div>
-    <div class="partner-chip tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="partner-chip">
       <span class="partner-chip-badge">Empanelled Hospital Partner</span>
       <div class="partner-chip-name">Shalby Multi-Specialty Hospitals</div>
     </div>
@@ -140,17 +110,16 @@
 
 <!-- ABOUT SECTION -->
 <section id="about" class="section fade-up">
+  <p class="eyebrow">Who We Are</p>
   <h2>About Us</h2>
   <div class="about-grid">
     <div class="about-visual-col">
-      <div class="tilt tilt-card about-tilt">
-        <img src="assets/about.jpg" alt="About Care & Cure Wellness" class="about-img">
-        <div class="card-glow"></div>
+      <div class="about-photo">
+        <img src="assets/about.jpg" alt="Inside a Care & Cure Wellness clinic" class="about-img">
         <span class="floating-badge">24×7 Care</span>
       </div>
 
-      <div class="glance-card tilt tilt-card">
-        <div class="card-glow"></div>
+      <div class="glance-card">
         <span class="glance-num">10+</span>
         <p class="glance-lbl">Years empowering workforces across India</p>
         <ul class="glance-list">
@@ -199,23 +168,19 @@
       </div>
 
       <div class="info-cards">
-        <div class="card tilt tilt-card">
-          <div class="card-glow"></div>
+        <div class="card">
           <h3>Our Mission</h3>
           <p>Provide accessible, professional occupational health solutions that empower organizations through a healthy workforce.</p>
         </div>
-        <div class="card tilt tilt-card">
-          <div class="card-glow"></div>
+        <div class="card">
           <h3>Our Vision</h3>
           <p>To become India's most trusted occupational health partner — setting the benchmark for quality, compliance and care.</p>
         </div>
-        <div class="card tilt tilt-card">
-          <div class="card-glow"></div>
+        <div class="card">
           <h3>Excellence &amp; Integrity</h3>
           <p>Best-in-class guidance backed by meticulous, error-free documentation and over a decade of hands-on expertise.</p>
         </div>
-        <div class="card tilt tilt-card">
-          <div class="card-glow"></div>
+        <div class="card">
           <h3>Compassion &amp; Innovation</h3>
           <p>Every solution is crafted with care for people and driven by continuous improvement in healthcare delivery.</p>
         </div>
@@ -225,21 +190,13 @@
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="section dark fade-up">
+<section id="services" class="section alt fade-up">
+  <p class="eyebrow">What We Offer</p>
   <h2>Our Services</h2>
-
-  <div class="services-intro">
-    <div class="tilt tilt-card services-tilt">
-      <img src="assets/services.jpg" alt="Care & Cure Wellness diagnostic services" class="services-img">
-      <div class="card-glow"></div>
-    </div>
-    <p>From pre-employment screening to full occupational-health-centre management, our clinical teams and mobile
-      units keep your workforce screened, treated and compliant — on site or at our facilities.</p>
-  </div>
+  <p class="section-lede">From pre-employment screening to full occupational-health-centre management, our clinical teams and mobile units keep your workforce screened, treated and compliant — on site or at our facilities.</p>
 
   <div class="services-grid">
-    <div class="card card-dark tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card">
       <div class="card-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
       </div>
@@ -248,8 +205,7 @@
       <div class="svc-tags"><span class="tag">CBC</span><span class="tag">ECG</span><span class="tag">Chest X-Ray</span><span class="tag">LFT / KFT</span></div>
     </div>
 
-    <div class="card card-dark tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card">
       <div class="card-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
       </div>
@@ -258,8 +214,7 @@
       <div class="svc-tags"><span class="tag">Factory Act</span><span class="tag">Annual</span><span class="tag">Bi-Annual</span></div>
     </div>
 
-    <div class="card card-dark tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card">
       <div class="card-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
       </div>
@@ -268,8 +223,7 @@
       <div class="svc-tags"><span class="tag">Custom Panel</span><span class="tag">Risk-Based</span><span class="tag">Executive</span></div>
     </div>
 
-    <div class="card card-dark tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card">
       <div class="card-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg>
       </div>
@@ -278,8 +232,7 @@
       <div class="svc-tags"><span class="tag">MBBS Doctors</span><span class="tag">Nurses</span><span class="tag">Paramedics</span></div>
     </div>
 
-    <div class="card card-dark tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card">
       <div class="card-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>
       </div>
@@ -288,8 +241,7 @@
       <div class="svc-tags"><span class="tag">24/7</span><span class="tag">Ambulance</span><span class="tag">First Aid</span></div>
     </div>
 
-    <div class="card card-dark tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card">
       <div class="card-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M9 4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2"/><path d="M9 13l2 2 4-4"/></svg>
       </div>
@@ -326,31 +278,28 @@
 </section>
 
 <!-- HEALTH CHECK PACKAGES -->
-<section id="packages" class="section alt fade-up">
+<section id="packages" class="section fade-up">
+  <p class="eyebrow">Choose Your Package</p>
   <h2>Different Packages for Your Health Needs</h2>
   <p class="section-lede">Whichever depth of screening your workforce needs, there's a package built for it.</p>
 
   <div class="packages-grid">
-    <div class="card tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card packages-card">
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-4.5 7-11V5l-7-3-7 3v5c0 6.5 7 11 7 11z"/></svg></div>
       <h3>Basic Health Check</h3>
       <p>Essential tests for overall well-being.</p>
     </div>
-    <div class="card tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card packages-card">
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-4.5 7-11V5l-7-3-7 3v5c0 6.5 7 11 7 11z"/><path d="M9.5 12l1.8 1.8L15 10"/></svg></div>
       <h3>Advance Health Check</h3>
       <p>Comprehensive tests for in-depth analysis.</p>
     </div>
-    <div class="card tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card packages-card">
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.5 3.5-7 8-7s8 2.5 8 7"/></svg></div>
       <h3>Full Body Health Check</h3>
       <p>Complete health assessment for total care.</p>
     </div>
-    <div class="card tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card packages-card">
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
       <h3>Executive Health Check</h3>
       <p>Advanced evaluation for executives &amp; professionals.</p>
@@ -359,7 +308,8 @@
 </section>
 
 <!-- OHC MANAGEMENT -->
-<section id="ohc" class="section fade-up">
+<section id="ohc" class="section alt fade-up">
+  <p class="eyebrow">OHC Management</p>
   <h2>Complete Occupational Health Centre Solutions</h2>
   <p class="section-lede">We don't merely supply staff — we manage the entire OHC ecosystem within manufacturing plants, corporate campuses and industrial zones.</p>
 
@@ -376,8 +326,7 @@
     </div>
 
     <div class="ohc-right">
-      <div class="card tilt tilt-card ohc-card">
-        <div class="card-glow"></div>
+      <div class="card ohc-card">
         <div class="ohc-card-lbl">Services We Manage at OHC</div>
         <ul class="ohc-ul">
           <li>Fitness-for-duty assessments</li>
@@ -390,8 +339,7 @@
           <li>Monthly health MIS reports for management</li>
         </ul>
       </div>
-      <div class="card tilt tilt-card ohc-card ohc-accent">
-        <div class="card-glow"></div>
+      <div class="card ohc-card ohc-accent">
         <div class="ohc-mis-head">
           <div class="ohc-mis-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></div>
           <div>
@@ -406,12 +354,12 @@
 </section>
 
 <!-- PROGRAMS -->
-<section id="programs" class="section alt fade-up">
+<section id="programs" class="section fade-up">
+  <p class="eyebrow">Health Programmes</p>
   <h2>Corporate Health Check-Up Programmes</h2>
   <p class="section-lede">Regular assessments calibrated to your industry, workforce demographics and regulatory obligations — reducing absenteeism and improving productivity.</p>
 
-  <div class="prog-wrap tilt tilt-card">
-    <div class="card-glow"></div>
+  <div class="prog-wrap">
     <div class="prog-scroll">
     <table>
       <thead>
@@ -466,33 +414,29 @@
 </section>
 
 <!-- INDUSTRIES -->
-<section id="industries" class="section fade-up">
+<section id="industries" class="section alt fade-up">
+  <p class="eyebrow">Who We Serve</p>
   <h2>Industries We Serve</h2>
   <p class="section-lede">Trusted by diverse industries across India for comprehensive occupational health management solutions.</p>
 
   <div class="industries-grid">
-    <div class="card tilt tilt-card ind-card">
-      <div class="card-glow"></div>
+    <div class="card ind-card">
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l6 4v-4l6 4V6l6 4v11H3z"/></svg></div>
       <div class="ind-name">Manufacturing</div>
     </div>
-    <div class="card tilt tilt-card ind-card">
-      <div class="card-glow"></div>
+    <div class="card ind-card">
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"/></svg></div>
       <div class="ind-name">Corporate Offices</div>
     </div>
-    <div class="card tilt tilt-card ind-card">
-      <div class="card-glow"></div>
+    <div class="card ind-card">
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M6 21V9l6-5 6 5v12M9 21v-6h6v6"/></svg></div>
       <div class="ind-name">Construction Sites</div>
     </div>
-    <div class="card tilt tilt-card ind-card">
-      <div class="card-glow"></div>
+    <div class="card ind-card">
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="1"/><path d="M4 8l8-5 8 5M12 3v5"/></svg></div>
       <div class="ind-name">Warehousing &amp; Logistics</div>
     </div>
-    <div class="card tilt tilt-card ind-card">
-      <div class="card-glow"></div>
+    <div class="card ind-card">
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
       <div class="ind-name">Industrial Plants</div>
     </div>
@@ -500,7 +444,8 @@
 </section>
 
 <!-- WHY CHOOSE US -->
-<section id="why" class="section dark fade-up">
+<section id="why" class="section fade-up">
+  <p class="eyebrow">Why Choose Us</p>
   <h2>The Difference You Can Count On</h2>
   <p class="section-lede">TRT Care &amp; Cure Wellness focuses on providing a complete healthcare ecosystem to your organisation — improving employee safety, regulatory compliance and overall efficiency.</p>
 
@@ -513,43 +458,37 @@
   </div>
 
   <div class="why-grid">
-    <div class="card card-dark tilt tilt-card why-card">
-      <div class="card-glow"></div>
+    <div class="card why-card">
       <span class="why-n">01</span>
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/><path d="M7 5H4a3 3 0 0 0 3 4M17 5h3a3 3 0 0 1-3 4"/></svg></div>
       <h3>10+ Years of Expertise</h3>
       <p class="svc-desc">Our seasoned team brings over a decade of hands-on occupational health experience, ensuring best-in-class guidance from day one.</p>
     </div>
-    <div class="card card-dark tilt tilt-card why-card">
-      <div class="card-glow"></div>
+    <div class="card why-card">
       <span class="why-n">02</span>
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1"/><circle cx="15" cy="12" r="1" fill="currentColor"/></svg></div>
       <h3>Doorstep Healthcare Solutions</h3>
       <p class="svc-desc">We bring specialised healthcare expertise directly to your facility, saving time and minimising operational disruption.</p>
     </div>
-    <div class="card card-dark tilt tilt-card why-card">
-      <div class="card-glow"></div>
+    <div class="card why-card">
       <span class="why-n">03</span>
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div>
       <h3>24/7 Qualified Doctor Support</h3>
       <p class="svc-desc">Round-the-clock medical support from qualified physicians, so employees always have access to professional medical advice.</p>
     </div>
-    <div class="card card-dark tilt tilt-card why-card">
-      <div class="card-glow"></div>
+    <div class="card why-card">
       <span class="why-n">04</span>
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></div>
       <h3>Tailor-Made Corporate Solutions</h3>
       <p class="svc-desc">Every organisation is unique — we craft customised health packages and OHC solutions aligned to your workforce profile.</p>
     </div>
-    <div class="card card-dark tilt tilt-card why-card">
-      <div class="card-glow"></div>
+    <div class="card why-card">
       <span class="why-n">05</span>
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg></div>
       <h3>Hospital &amp; Lab Network</h3>
       <p class="svc-desc">Extensive empanelment with leading hospitals and diagnostic labs ensures rapid, accurate referrals during emergencies.</p>
     </div>
-    <div class="card card-dark tilt tilt-card why-card">
-      <div class="card-glow"></div>
+    <div class="card why-card">
       <span class="why-n">06</span>
       <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M9 4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2"/><path d="M9 13l2 2 4-4"/></svg></div>
       <h3>Compliance &amp; Documentation</h3>
@@ -559,7 +498,8 @@
 </section>
 
 <!-- PROCESS -->
-<section id="process" class="section fade-up">
+<section id="process" class="section alt fade-up">
+  <p class="eyebrow">Our Method</p>
   <h2>How We Work</h2>
   <p class="section-lede">A simple, structured approach — from first conversation to continuous improvement.</p>
 
@@ -594,10 +534,10 @@
 
 <!-- TESTIMONIALS -->
 <section class="testimonial-band fade-up" aria-label="Client testimonials">
+  <p class="eyebrow">Client Stories</p>
   <h2>Trusted by Organisations Across India</h2>
   <div class="testimonial-grid">
-    <div class="testimonial-box tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card testimonial-box">
       <div class="stars">★★★★★</div>
       <p class="t-text">"Care &amp; Cure set up and manages our entire OHC at our Sanand manufacturing plant. The response time during emergencies and quality of medical staff has been exceptional."</p>
       <div class="t-who">
@@ -605,8 +545,7 @@
         <div class="t-role">Automotive Manufacturing, Gujarat</div>
       </div>
     </div>
-    <div class="testimonial-box tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card testimonial-box">
       <div class="stars">★★★★★</div>
       <p class="t-text">"The periodical health check-up programme they designed for our 300+ workforce is thorough, efficient, and fully compliant with Factory Act requirements."</p>
       <div class="t-who">
@@ -614,8 +553,7 @@
         <div class="t-role">Chemical Industrial Plant, Ahmedabad</div>
       </div>
     </div>
-    <div class="testimonial-box tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="card testimonial-box">
       <div class="stars">★★★★★</div>
       <p class="t-text">"Their documentation and MIS reporting is world-class. We sailed through our factory audit last year without a single compliance gap."</p>
       <div class="t-who">
@@ -627,19 +565,18 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section alt fade-up">
+<section id="contact" class="section fade-up">
+  <p class="eyebrow">Get in Touch</p>
   <h2>Let's Build a Healthier Workforce Together</h2>
   <p class="section-lede">Reach out to see how Care &amp; Cure Wellness can add measurable value to your organisation. Our team responds within 24 hours.</p>
 
   <div class="contact-grid">
     <div class="contact-info-col">
-      <div class="tilt tilt-card contact-tilt">
+      <div class="contact-photo">
         <img src="assets/contact.jpg" alt="Contact Care & Cure Wellness" class="contact-img">
-        <div class="card-glow"></div>
       </div>
 
-      <div class="contact-box tilt tilt-card">
-        <div class="card-glow"></div>
+      <div class="card contact-box">
         <div class="ci">
           <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
           <div>
@@ -669,8 +606,7 @@
       </div>
     </div>
 
-    <div class="contact-form-card tilt tilt-card">
-      <div class="card-glow"></div>
+    <div class="contact-form-card">
       <h3>Request a Consultation</h3>
       <p class="form-sub">Fill in your details — submitting opens your email app with everything pre-filled, ready to send to our team.</p>
       <form id="enquiry-form">
