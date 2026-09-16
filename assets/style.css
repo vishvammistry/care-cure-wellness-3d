@@ -40,7 +40,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
   color: var(--brand-dark);
   margin-bottom: 0.5em;
 }
@@ -48,9 +48,20 @@ h1, h2, h3 {
 h2 {
   text-align: center;
   font-size: clamp(1.9rem, 3vw, 2.4rem);
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0.2px;
   margin-bottom: 0.3em;
+}
+
+.eyebrow:not(.eyebrow-hero)::before,
+.partners-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+  vertical-align: -2px;
+  background: url("logo.png") center/contain no-repeat;
 }
 
 .eyebrow {
@@ -115,7 +126,7 @@ h2 {
 }
 
 .navbar-logo-full {
-  height: 46px;
+  height: 58px;
   width: auto;
   display: block;
   border-radius: 8px;
@@ -228,7 +239,7 @@ h2 {
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
 }
 
 .mobile-menu a:hover { color: var(--accent); }
@@ -310,9 +321,10 @@ h2 {
 }
 
 .hero h1 {
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2.3rem, 5vw, 3.8rem);
-  font-weight: 800;
+  font-family: "Lora", serif;
+  font-size: clamp(2.2rem, 4.6vw, 3.5rem);
+  font-weight: 600;
+  letter-spacing: -0.2px;
   color: white;
   line-height: 1.1;
   margin-bottom: 0.4em;
@@ -383,7 +395,7 @@ h2 {
 }
 
 .hero-stat-val {
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
   font-size: 1.8rem;
   font-weight: 800;
   color: white;
@@ -496,7 +508,7 @@ h2 {
 }
 
 .partner-chip-name {
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
   font-size: 1rem;
   font-weight: 700;
   color: var(--brand-dark);
@@ -573,7 +585,7 @@ h2 {
 }
 
 .glance-num {
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
   font-size: 3rem;
   font-weight: 800;
   color: var(--brand-light);
@@ -707,7 +719,7 @@ h2 {
 
 .brand-quote {
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
   font-style: italic;
   font-size: 1.3rem;
   font-weight: 700;
@@ -842,7 +854,7 @@ h2 {
 .prog-wrap tr:last-child td { border-bottom: none; }
 .prog-wrap tr:hover td { background: var(--cream); }
 
-.pname { font-family: "Playfair Display", serif; font-weight: 700; color: var(--brand-dark); }
+.pname { font-family: "Lora", serif; font-weight: 700; color: var(--brand-dark); }
 .psub { font-size: 0.78rem; color: var(--ink-muted); margin-top: 3px; }
 
 .ptag {
@@ -900,7 +912,7 @@ h2 {
   position: absolute;
   top: 10px;
   right: 20px;
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
   font-size: 3.4rem;
   font-weight: 800;
   color: var(--cream-alt);
@@ -949,7 +961,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--brand-dark);
@@ -990,7 +1002,7 @@ h2 {
   margin-bottom: 18px;
 }
 
-.t-name { font-family: "Playfair Display", serif; font-size: 0.9rem; font-weight: 700; color: var(--brand-dark); }
+.t-name { font-family: "Lora", serif; font-size: 0.9rem; font-weight: 700; color: var(--brand-dark); }
 .t-role { font-size: 0.74rem; color: var(--ink-muted); }
 
 /* ===== CONTACT ===== */
@@ -1121,9 +1133,31 @@ h2 {
 
 /* ===== FOOTER ===== */
 footer {
+  position: relative;
   background: var(--dark-bg);
   color: white;
   padding: 64px 10% 32px;
+  overflow: hidden;
+}
+
+.foot-watermark {
+  position: absolute;
+  bottom: -60px;
+  right: -40px;
+  width: 320px;
+  height: 320px;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.foot-top {
+  position: relative;
+  z-index: 1;
+}
+
+.foot-btm {
+  position: relative;
+  z-index: 1;
 }
 
 .foot-top {
@@ -1137,7 +1171,7 @@ footer {
 }
 
 .foot-logo-full {
-  height: 62px;
+  height: 76px;
   width: auto;
   display: block;
   border-radius: 8px;
@@ -1226,7 +1260,7 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .navbar-logo-full { height: 38px; }
+  .navbar-logo-full { height: 44px; }
   .nav-links { display: none; }
   .nav-cta { display: none; }
   .hamburger { display: flex; }
@@ -1252,7 +1286,7 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .foot-logo-full { height: 44px; }
+  .foot-logo-full { height: 52px; }
   .section { padding: 76px 6%; }
   .testimonial-band { padding: 76px 6%; }
   .partners-strip { padding: 34px 6% 44px; }
