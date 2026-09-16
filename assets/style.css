@@ -211,10 +211,17 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 26px;
 }
 
 .mobile-menu.open { display: flex; }
+
+.mobile-menu-logo {
+  height: 52px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
 
 .mobile-menu a {
   color: white;
@@ -541,11 +548,28 @@ h2 {
 .about-grid > div:not(.about-visual-col) { flex: 1 1 45%; }
 
 .glance-card {
+  position: relative;
   background: var(--brand-dark);
   border-radius: var(--radius);
   padding: 34px;
   color: white;
   box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.glance-watermark {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 160px;
+  height: 160px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.glance-content {
+  position: relative;
+  z-index: 1;
 }
 
 .glance-num {
@@ -666,6 +690,21 @@ h2 {
   font-weight: 600;
 }
 
+.brand-quote-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 50px 0 36px;
+  flex-wrap: wrap;
+}
+
+.brand-quote-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
 .brand-quote {
   text-align: center;
   font-family: "Playfair Display", serif;
@@ -673,7 +712,7 @@ h2 {
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--brand-dark);
-  margin: 50px 0 36px;
+  margin: 0;
 }
 
 .extra-bar {
