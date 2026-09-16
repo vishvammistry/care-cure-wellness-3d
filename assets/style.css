@@ -288,7 +288,7 @@ h2 {
 .hero-photo {
   position: absolute;
   inset: 0;
-  background: url('about.jpg') center 30%/cover no-repeat;
+  background: url('building.png') 68% 45%/cover no-repeat;
   transform: scale(1.03);
 }
 
@@ -1203,6 +1203,11 @@ footer {
   .nav-links { display: none; }
   .nav-cta { display: none; }
   .hamburger { display: flex; }
+
+  .hero-photo { background-position: 22% 40%; }
+  .hero-overlay {
+    background: linear-gradient(180deg, rgba(11, 31, 18, 0.7) 0%, rgba(11, 31, 18, 0.58) 45%, rgba(11, 31, 18, 0.88) 100%);
+  }
 
   .about-grid, .ohc-grid, .contact-grid { flex-direction: column; }
   .ohc-grid { grid-template-columns: 1fr; gap: 36px; }
