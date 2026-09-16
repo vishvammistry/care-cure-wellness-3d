@@ -175,6 +175,16 @@ h2 {
   50% { opacity: 0.5; transform: scale(1.6); }
 }
 
+.hero-tagline {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brand-light);
+  margin: -8px auto 22px;
+  text-shadow: none;
+}
+
 .hero-btns {
   display: flex;
   flex-wrap: wrap;
@@ -289,12 +299,26 @@ h2 {
 }
 
 .navbar-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  line-height: 1;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.brand-kicker {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--brand-light);
+}
+
+.brand-name {
   color: white;
   font-weight: 800;
   font-size: 1.05rem;
-  text-decoration: none;
   letter-spacing: 0.2px;
-  flex-shrink: 0;
 }
 
 .nav-links {
@@ -303,7 +327,7 @@ h2 {
   justify-content: center;
   margin: 0;
   padding: 0;
-  gap: 30px;
+  gap: 22px;
   flex: 1;
 }
 
@@ -517,6 +541,81 @@ h2 {
   color: rgba(255, 255, 255, 0.78);
   margin-top: 10px;
   font-weight: 500;
+}
+
+/* PARTNERS STRIP */
+.partners-strip {
+  padding: 40px 10% 50px;
+  background: var(--bg-section);
+  text-align: center;
+}
+
+.partners-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brand-mid);
+  margin: 0 0 22px;
+}
+
+.partners-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.partner-chip {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  box-shadow: var(--shadow-sm);
+}
+
+.partner-chip-badge {
+  display: inline-block;
+  background: var(--brand-dark);
+  color: white;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.partner-chip-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+/* TRUST BADGES (About section) */
+.trust-badges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.trust-badge svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: var(--brand-mid);
 }
 
 /* ABOUT SECTION */
@@ -789,6 +888,37 @@ h2 {
   margin: 0;
 }
 
+.brand-quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--brand-light);
+  margin: 44px 0 36px;
+}
+
+/* HEALTH CHECK PACKAGES */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 20px;
+}
+
+.packages-grid .card {
+  text-align: center;
+}
+
+.packages-grid .card-icon {
+  margin: 0 auto 16px;
+}
+
+.packages-grid p {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
 /* OHC MANAGEMENT */
 .ohc-grid {
   display: grid;
@@ -984,6 +1114,24 @@ h2 {
   line-height: 1;
 }
 
+.strengths-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 40px;
+}
+
+.strength-chip {
+  background: rgba(140, 217, 59, 0.09);
+  border: 1px solid rgba(140, 217, 59, 0.28);
+  color: var(--brand-light);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
 /* PROCESS */
 .process-grid {
   display: grid;
@@ -1001,6 +1149,15 @@ h2 {
   right: calc(16.67% + 20px);
   height: 2px;
   background: linear-gradient(90deg, var(--brand-dark), var(--brand-light), var(--brand-dark));
+}
+
+.process-grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.process-grid-5::before {
+  left: calc(10% + 20px);
+  right: calc(10% + 20px);
 }
 
 .proc-step {
@@ -1264,6 +1421,14 @@ footer {
   margin-right: auto;
 }
 
+.foot-kicker {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--brand-light);
+  margin-bottom: 4px;
+}
+
 .foot-logo { font-weight: 800; font-size: 1.1rem; }
 
 .foot-brand p {
@@ -1355,6 +1520,9 @@ footer {
 @media (max-width: 1100px) {
   .industries-grid { grid-template-columns: repeat(3, 1fr); }
   .foot-top { grid-template-columns: 1fr 1fr; }
+  .packages-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid-5 { grid-template-columns: repeat(3, 1fr); gap: 40px 0; }
+  .process-grid-5::before { display: none; }
 }
 
 @media (max-width: 900px) {
@@ -1374,6 +1542,7 @@ footer {
   .ohc-feats { grid-template-columns: 1fr; }
   .info-cards { grid-template-columns: 1fr; }
   .industries-grid { grid-template-columns: repeat(2, 1fr); }
+  .partners-row { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 700px) {
@@ -1381,9 +1550,12 @@ footer {
     padding: 70px 6%;
   }
   .stats-band, .testimonial-band { padding: 50px 6%; }
+  .partners-strip { padding: 34px 6% 44px; }
   .f-row { grid-template-columns: 1fr; }
   .foot-top { grid-template-columns: 1fr; }
   .foot-btm { flex-direction: column; gap: 8px; text-align: center; }
   .contact-form-card { padding: 26px 20px; }
   .floating-badge { right: 6px; bottom: -14px; padding: 8px 14px; font-size: 0.78rem; }
+  .packages-grid { grid-template-columns: 1fr; }
+  .trust-badges { grid-template-columns: 1fr; }
 }
