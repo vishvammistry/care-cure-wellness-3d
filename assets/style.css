@@ -281,10 +281,25 @@ h2 {
   padding: 170px 8% 80px;
 }
 
+.hero-mark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.hero-mark-icon {
+  width: 34px;
+  height: 34px;
+  display: block;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+}
+
 .eyebrow-hero {
   text-align: left;
   color: var(--accent);
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
 
 .hero h1 {
